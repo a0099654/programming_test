@@ -43,7 +43,6 @@ li a:hover:not(.active) {
   margin: auto;
   margin-top: 20px;
   text-align: center;
-  font-family: arial;
 }
 
 .container {
@@ -58,7 +57,7 @@ li a:hover:not(.active) {
 
 .title {
   color: grey;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .image {
@@ -67,4 +66,90 @@ li a:hover:not(.active) {
 
 audio {
   margin-left: -16px;
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+.comment-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+}
+
+.comment-image {
+  width: 40%;
+  height: 40%
+}
+
+.comment-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/*For search bar*/
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus {
+  color: #00B4CC;
+}
+
+.searchButton {
+  position: absolute;
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+/*Resize the wrap to see the search bar change!*/
+
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -15,17 +15,18 @@ export default class Posts extends React.Component {
 
     let contents = arrPosts.map(post => {
       return (
-        <div key={post.id.toString()}>
-          <div className="card">
-            <div>{post.userId}</div>
-            <div>{post.title}</div>
+        <div key={post.id.toString()} className="comment-card">
+          <img src='./image/profile.png' className="comment-image"/>
+          <div className="container">
+            <h1>User {post.userId}</h1>
+            <p className="title">{post.title}</p>
           </div>
         </div>
       );
     });
 
     return (
-      <div>
+      <div className="comment-flex">
         {contents}
       </div>
     );
