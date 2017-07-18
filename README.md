@@ -6,6 +6,7 @@ You can use either yarn or npm to kick start the application
 
 To start development
 ```
+npm install
 npm run dev
 ```
 
@@ -18,6 +19,7 @@ npm run lint
 
 To start development
 ```
+yarn install
 yarn run dev
 ```
 
