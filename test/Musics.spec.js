@@ -1,13 +1,20 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import {expect} from 'chai';
 
 import Musics from '../src/js/components/Musics';
 
-describe('<Musics/>', function() {
-  it('should have an image to display the gravatar', function() {
+describe('<Image/>', () => {
+  it('should have an image to display the gravatar', () => {
     const wrapper = shallow('<Musics/>');
-    expect(wrapper.find('div')).to.have.length(1);
+    expect(wrapper.find('img')).to.have.length(1);
+  });
+
+});
+
+describe('<Sound/>', () => {
+  it('should have an image to display the gravatar', () => {
+    const wrapper = shallow('<Musics/>');
+    expect(wrapper.find('audio')).to.have.length(1);
   });
 
 });
