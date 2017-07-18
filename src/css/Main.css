@@ -68,24 +68,8 @@ audio {
   margin-left: -16px;
 }
 
-input[type=text] {
-  width: 130px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url('searchicon.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
 
-input[type=text]:focus {
-  width: 100%;
-}
+/*For comment card*/
 
 .comment-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -109,47 +93,28 @@ input[type=text]:focus {
 
 /*For search bar*/
 
-.search {
-  width: 100%;
-  position: relative
+input[type=text] {
+  margin-left: 56px;
+  width: 100px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 16px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 
-.searchTerm {
-  float: left;
-  width: 100%;
-  border: 3px solid #00B4CC;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px;
-  outline: none;
-  color: #9DBFAF;
+input[type=text]:focus {
+  width: 50%;
 }
 
-.searchTerm:focus {
-  color: #00B4CC;
-}
-
-.searchButton {
+.top-left-position {
+  top: 2px;
+  right: 78px;
+  height: 50px;
   position: absolute;
-  right: -50px;
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-
-/*Resize the wrap to see the search bar change!*/
-
-.wrap {
-  width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }

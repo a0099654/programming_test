@@ -26,8 +26,14 @@ export default class Posts extends React.Component {
     });
 
     return (
-      <div className="comment-flex">
-        {contents}
+      <div>
+        <form>
+          <input type="text" name="search" placeholder="Search.."/>
+        </form>
+        <button className="w3-button w3-white w3-border w3-border-red w3-round-large top-left-position">Sort</button>
+        <div className="comment-flex">
+          {contents}
+        </div>
       </div>
     );
   }
