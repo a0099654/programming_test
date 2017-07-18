@@ -16,6 +16,11 @@ To run lint
 npm run lint
 ```
 
+To run test
+```
+npm run test
+```
+
 #### 2. With yarn
 
 To start development
@@ -27,4 +32,9 @@ yarn run dev
 To run lint
 ```
 yarn run lint
+```
+
+To run test
+```
+yarn run test
 ```
