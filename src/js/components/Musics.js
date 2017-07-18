@@ -21,6 +21,6 @@ export default class Musics extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
