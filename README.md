@@ -1,7 +1,10 @@
 ## Instructions
 
 You can use either yarn or npm to kick start the application
+
 Note: Please use google chrome to load the application
+
+Access http://localhost:8080
 
 #### 1. With npm
 
