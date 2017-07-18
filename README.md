@@ -1,6 +1,7 @@
 ## Instructions
 
 You can use either yarn or npm to kick start the application
+Note: Please use google chrome to load the application
 
 #### 1. With npm
 
